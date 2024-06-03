@@ -1,0 +1,146 @@
+[
+    {
+        "apartment_image": "https://example.com/image1.jpg",
+        "floor_no": 1,
+        "block_name": "A",
+        "apartment_no": 101,
+        "rent": 1000,
+        "agreement_link": "https://example.com/agreement1"
+    },
+    {
+        "apartment_image": "https://example.com/image2.jpg",
+        "floor_no": 1,
+        "block_name": "B",
+        "apartment_no": 102,
+        "rent": 1100,
+        "agreement_link": "https://example.com/agreement2"
+    },
+    {
+        "apartment_image": "https://example.com/image3.jpg",
+        "floor_no": 2,
+        "block_name": "A",
+        "apartment_no": 201,
+        "rent": 1200,
+        "agreement_link": "https://example.com/agreement3"
+    },
+    {
+        "apartment_image": "https://example.com/image4.jpg",
+        "floor_no": 2,
+        "block_name": "A",
+        "apartment_no": 202,
+        "rent": 1300,
+        "agreement_link": "https://example.com/agreement4"
+    },
+    {
+        "apartment_image": "https://example.com/image5.jpg",
+        "floor_no": 3,
+        "block_name": "A",
+        "apartment_no": 301,
+        "rent": 1400,
+        "agreement_link": "https://example.com/agreement5"
+    },
+    {
+        "apartment_image": "https://example.com/image6.jpg",
+        "floor_no": 3,
+        "block_name": "A",
+        "apartment_no": 302,
+        "rent": 1500,
+        "agreement_link": "https://example.com/agreement6"
+    },
+    {
+        "apartment_image": "https://example.com/image7.jpg",
+        "floor_no": 4,
+        "block_name": "B",
+        "apartment_no": 401,
+        "rent": 1600,
+        "agreement_link": "https://example.com/agreement7"
+    },
+    {
+        "apartment_image": "https://example.com/image8.jpg",
+        "floor_no": 4,
+        "block_name": "B",
+        "apartment_no": 402,
+        "rent": 1700,
+        "agreement_link": "https://example.com/agreement8"
+    },
+    {
+        "apartment_image": "https://example.com/image9.jpg",
+        "floor_no": 5,
+        "block_name": "B",
+        "apartment_no": 501,
+        "rent": 1800,
+        "agreement_link": "https://example.com/agreement9"
+    },
+    {
+        "apartment_image": "https://example.com/image10.jpg",
+        "floor_no": 5,
+        "block_name": "B",
+        "apartment_no": 502,
+        "rent": 1900,
+        "agreement_link": "https://example.com/agreement10"
+    },
+    {
+        "apartment_image": "https://example.com/image11.jpg",
+        "floor_no": 6,
+        "block_name": "C",
+        "apartment_no": 601,
+        "rent": 2000,
+        "agreement_link": "https://example.com/agreement11"
+    },
+    {
+        "apartment_image": "https://example.com/image12.jpg",
+        "floor_no": 6,
+        "block_name": "C",
+        "apartment_no": 602,
+        "rent": 2100,
+        "agreement_link": "https://example.com/agreement12"
+    },
+    {
+        "apartment_image": "https://example.com/image13.jpg",
+        "floor_no": 7,
+        "block_name": "C",
+        "apartment_no": 701,
+        "rent": 2200,
+        "agreement_link": "https://example.com/agreement13"
+    },
+    {
+        "apartment_image": "https://example.com/image14.jpg",
+        "floor_no": 7,
+        "block_name": "C",
+        "apartment_no": 702,
+        "rent": 2300,
+        "agreement_link": "https://example.com/agreement14"
+    },
+    {
+        "apartment_image": "https://example.com/image15.jpg",
+        "floor_no": 8,
+        "block_name": "D",
+        "apartment_no": 801,
+        "rent": 2400,
+        "agreement_link": "https://example.com/agreement15"
+    },
+    {
+        "apartment_image": "https://example.com/image16.jpg",
+        "floor_no": 8,
+        "block_name": "D",
+        "apartment_no": 802,
+        "rent": 2500,
+        "agreement_link": "https://example.com/agreement16"
+    },
+    {
+        "apartment_image": "https://example.com/image17.jpg",
+        "floor_no": 9,
+        "block_name": "D",
+        "apartment_no": 901,
+        "rent": 2600,
+        "agreement_link": "https://example.com/agreement17"
+    },
+    {
+        "apartment_image": "https://example.com/image18.jpg",
+        "floor_no": 9,
+        "block_name": "D",
+        "apartment_no": 902,
+        "rent": 2700,
+        "agreement_link": "https://example.com/agreement18"
+    }
+]

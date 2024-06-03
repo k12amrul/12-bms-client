@@ -4,7 +4,8 @@ import ErrorPage from "../Shared/ErrorPage";
 import SignUp from "../Pages/SignUp/SignUp";
 import Login from "../Pages/Login/Login";
 import Dashboard from "../Layout/Dashboard";
-
+// import Home  from "../components/Home/Home"
+import Home1 from "../components/Home/Home1";
 
 
 
@@ -16,9 +17,8 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/home',
-            //    loader: ()=> fetch(`${import.meta.env.VITE_REACT_APP_API_URL}`) ,
-                element: <h1>  home </h1>
-                // <Home></Home>,
+               loader: ()=> fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/apartments`) ,
+                element:  <Home1></Home1>,
             },
            
 

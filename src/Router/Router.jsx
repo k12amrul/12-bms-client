@@ -16,19 +16,19 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
-                path: '/home',
-               loader: ()=> fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/apartments`) ,
-                element:  <Home1></Home1>,
+                path: '/',
+                // loader: () => fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/apartments`),
+                element: <Home1></Home1>,
             },
-           
+
 
         ]
 
     },
     {
-        path : 'dashboard' ,
-        element: <Dashboard></Dashboard> ,
-        children :[
+        path: 'dashboard',
+        element: <Dashboard></Dashboard>,
+        children: [
 
             {
                 path: 'adminHome',
@@ -54,7 +54,7 @@ const router = createBrowserRouter([
         path: '/login',
         element: <Login> </Login>
     },
-            
+
 ]
 
 )

@@ -12,6 +12,7 @@ const Navbar = () => {
     //   const { user, logOut } = useContext(AuthContext)
 
     // console.log(user?.displayName, user?.photoURL)
+    // console.log(user)
     const handleLogOUt = () => {
         logOut()
             .then(() => console.log('Successfully LogOUt'))

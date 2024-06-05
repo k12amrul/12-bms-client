@@ -15,20 +15,21 @@ const Aparments = () => {
 
     })
 
-   
+
 
     return (
         <div className=' grid grid-cols-1 md:grid-cols-2 gap-8 '>
-           {
-apartments?.map( (apartment ,ix )  => <Card
+            {
+                apartments?.map((apartment, ix) => <Card
 
-apartment={apartment }
->
+                    apartment={apartment}
+                    key={ix}
+                >
 
 
-</Card> )
+                </Card>)
 
-           }
+            }
         </div>
     );
 };

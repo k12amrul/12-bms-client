@@ -9,7 +9,8 @@ const location = useLocation()
     const {  user, loading, setloading } =useContext(AuthContext )
 
 if( loading ){
-    return <span className="loading loading-spinner loading-lg"></span>
+    return  <div className=" animate-spin  radial-progress" style={{"--value":70}} role="progressbar">70%</div>
+    // <span className="loading loading-spinner loading-lg"></span>
 }
 
 if ( user ){

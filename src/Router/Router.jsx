@@ -9,6 +9,7 @@ import Home1 from "../components/Home/Home1";
 import AdminProfile from "../Pages/Dashboard/AdminProfile/AdminProfile";
 import ManageMembers from "../Pages/Dashboard/ManageMembers/ManageMembers";
 import AgreementRequests from "../Pages/Dashboard/AgreementRequests/AgreementRequests";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -26,6 +27,8 @@ const router = createBrowserRouter([
             {
                 path: '/home',
                 element: <Home1></Home1>,
+
+
             },
 
 
@@ -43,8 +46,11 @@ const router = createBrowserRouter([
             },
             {
                 path: 'manageUsers',
-                  loader: () => fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/users`),
-                element: <ManageMembers> </ManageMembers>
+                loader: () => fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/users`),
+                element: <PrivateRoute>
+
+                    <ManageMembers> </ManageMembers>
+                </PrivateRoute>
             },
             {
                 path: 'agreementRequests',

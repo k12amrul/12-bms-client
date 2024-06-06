@@ -3,37 +3,35 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import useAxiosPublic from '../../../hooks/useAxiosPublic';
 import useAuth from '../../../hooks/useAuth';
+import useRole from '../../../hooks/useRole';
+import toast from 'react-hot-toast';
 
 const ManageMembers = () => {
 
 
+
     const axiosPublic = useAxiosPublic()
-    const { user }= useAuth()
+    const { user } = useAuth()
+
+    // const [role  ]= useRole( )
     const users = useLoaderData()
 
-    const handleUser =  (id) => {
-const  role = {role : "user" }
-         axiosPublic.patch(`/user/update/${user?.email}` , role)
-         .then( res => {
-            console.log( res.data )
-            // navigate(location.state ? location.state : '/')
-  
-          })
-  
-  
-        //   console.log(result)
-        
-        
-        .catch((err) => console.log(err ,'cccc'))
+    const handleUser = (id) => {
+        console.log(id)
+      
+        const role = { role: "user" }
+        axiosPublic.patch(`/user/update/${id}`, role)
+            .then(res => {
+                console.log(res.data)
+                // navigate(location.state ? location.state : '/')
 
-        // const { data }  = useMutation( {
-        //     mutationFn : ( )=> {
+            })
 
-        //     }
-            
-        //     })
-            
-           
+
+            .catch((err) => console.log(err, 'cccc'))
+
+
+
     }
 
     return (
@@ -52,15 +50,15 @@ const  role = {role : "user" }
                     <tbody>
                         {/* row 1 */}
 
-                      
+
                         {
-                            users?.map((user ,ix) =>
+                            users?.map((user, ix) =>
                                 <tr>
-                                    <th> { ix +1} </th>
+                                    <th> {ix + 1} </th>
                                     <td>{user?.name} </td>
                                     <td>{user?.email} </td>
                                     <td><button onClick={() => handleUser(user?._id)} className='btn  bg-red-300' >remove </button> </td>
-                                    
+
                                 </tr>
 
                             )

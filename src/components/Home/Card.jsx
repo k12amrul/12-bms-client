@@ -57,6 +57,7 @@ const Card = ({ apartment }) => {
       apartment_no,
       rent,
       status: "pending",
+      Agreement_request_date : new Date(),
       email: user?.email,
       name: user?.displayName
     }

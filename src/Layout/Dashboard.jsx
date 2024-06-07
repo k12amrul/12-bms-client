@@ -8,11 +8,11 @@ import useAuth from '../hooks/useAuth';
 const Dashboard = () => {
     // const { user, loading } =useContext( AuthContext)
     const { user, loading } = useAuth();
-    console.log(user)
+    // console.log(user)
 
-    const [role ] = useRole()
+    const [role] = useRole()
 
-  
+
     console.log(role)
 
     // const isAdmin = false
@@ -25,83 +25,137 @@ const Dashboard = () => {
                 {/* dashboard side bar */}
                 <div className="w-64 min-h-screen bg-gray-300">
                     <ul className="menu p-4">
+
+                    {/* my problem is solved by myself.
+Programming-Hero Instructors
+৭:৫৫ PM
+admin&&
+member&&
+!admin && !member
+&&
+Programming-Hero Instructors
+৭:৫৭ PM
+{}
+{} */}
+
+
+{
+    role?.role === 'admin' &&
+    <>
+    <li>
+        <NavLink to="/dashboard/adminHome">
+            <FaHome></FaHome>
+            Admin Home</NavLink>
+    </li>
+    <li>
+        <NavLink to="/dashboard/manageUsers">
+            Manage Users
+        </NavLink>
+    </li>
+    <li>
+        <NavLink to="/dashboard/agreementRequests">
+            Agreement Requests
+        </NavLink>
+    </li>
+    <li>
+        <NavLink to="/dashboard/manageCoupons">
+            Manage Coupons
+        </NavLink>
+    </li>
+    <li>
+        <NavLink to="/dashboard/announcement">
+            Announcement
+        </NavLink>
+    </li>
+
+</>
+}
+
+{
+    role?.role === 'member'  && <li>
+    <NavLink to="/dashboard/memberProfile">
+        
+    Member Profile</NavLink>
+</li>
+
+}
+{
+    role?.role === 'user' && <>
+
+<li>
+                                        <NavLink to="/dashboard/userProfile">
+                                            
+                                            User Profile</NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/dashboard/announcements">
+                                           
+                                            Announcements</NavLink>
+                                    </li>
+
+    </>
+}
+
+{/* 
                         {
-                      role === 'admin'       ? <>
-                                <li>
-                                    <NavLink to="/dashboard/adminHome">
-                                        <FaHome></FaHome>
-                                        Admin Home</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink  to="/dashboard/manageUsers">
-                                    Manage Users
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink  to="/dashboard/agreementRequests">
-                                    Agreement Requests
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink  to="/dashboard/manageCoupons">
-                                    Manage Coupons
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink  to="/dashboard/announcement">
-                                    Announcement
-                                    </NavLink>
-                                </li>
-                                {/* <li>
-                            <NavLink to="/dashboard/addItems">
-                                <FaUtensils></FaUtensils>
-                                Add Items</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/dashboard/manageItems">
-                                <FaList></FaList>
-                                Manage Items</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/dashboard/bookings">
-                                <FaBook></FaBook>
-                                Manage Bookings</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/dashboard/users">
-                                <FaUsers></FaUsers>
-                                All Users</NavLink>
-                        </li> */}
-                            </>
-                                :
+                            role?.role === 'admin' ?
+
                                 <>
                                     <li>
-                                        <NavLink to="/dashboard/userHome">
+                                        <NavLink to="/dashboard/adminHome">
                                             <FaHome></FaHome>
-                                            User Home</NavLink>
+                                            Admin Home</NavLink>
                                     </li>
-                                    {/* <li>
-                                <NavLink to="/dashboard/history">
-                                    <FaCalendar></FaCalendar>
-                                    Not History</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to="/dashboard/cart">
-                                    <FaShoppingCart></FaShoppingCart>
-                                    My Cart ({cart.length})</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to="/dashboard/review">
-                                    <FaAd></FaAd>
-                                    Add a Review</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to="/dashboard/paymentHistory">
-                                    <FaList></FaList>
-                                    Real Payment History</NavLink>
-                            </li> */}
+                                    <li>
+                                        <NavLink to="/dashboard/manageUsers">
+                                            Manage Users
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/dashboard/agreementRequests">
+                                            Agreement Requests
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/dashboard/manageCoupons">
+                                            Manage Coupons
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/dashboard/announcement">
+                                            Announcement
+                                        </NavLink>
+                                    </li>
+
                                 </>
-                        }
+                                :
+                                <>
+
+                                <li>
+                                        <NavLink to="/dashboard/memberProfile">
+                                            
+                                        Member Profile</NavLink>
+                                    </li>
+
+                                    <li>
+                                        <NavLink to="/dashboard/userProfile">
+                                            
+                                            User Profile</NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/dashboard/announcements">
+                                           
+                                            Announcements</NavLink>
+                                    </li>
+
+
+
+                                </>
+
+
+
+
+                        } */}
                         {/* shared nav links */}
                         <div className="divider"></div>
                         <li>
@@ -109,16 +163,7 @@ const Dashboard = () => {
                                 <FaHome></FaHome>
                                 Home</NavLink>
                         </li>
-                        <li>
-                            <NavLink to="/order/salad">
-                                <FaSearch></FaSearch>
-                                Menu</NavLink>
-                        </li>
-                        {/* <li>
-                    <NavLink to="/order/contact">
-                        <FaEnvelope></FaEnvelope>
-                        Contact</NavLink>
-                </li> */}
+
                     </ul>
                 </div>
                 {/* dashboard content */}

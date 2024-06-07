@@ -10,7 +10,7 @@ const useRole = () => {
     // useRole hook kaj korena 
     const { user, loading } = useContext(AuthContext)
     // const { user, loading } = useAuth();
-    console.log(user)
+    // console.log(user)
     const axiosPublic = useAxiosPublic();
 
 
@@ -18,13 +18,12 @@ const useRole = () => {
         queryKey: ['role'], //user?.email,
         enabled: !loading && !!user?.email,
         queryFn: async () => {
-            console.log(user)
             const { data } = await axiosPublic.get(`/user/${user?.email}`);
             // console.log(res.data);
-            return data?.role;
+            return data;
         }
     })
-    console.log(role)
+    // console.log(role)
     return [role, isPending  ]
 };
 

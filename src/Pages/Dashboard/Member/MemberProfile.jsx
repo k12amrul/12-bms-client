@@ -1,13 +1,15 @@
 import React from 'react';
 import useAuth from '../../../hooks/useAuth';
 import useRole from '../../../hooks/useRole';
+// import useAuth from '../../../hooks/useAuth';
+// import useRole from '../../../hooks/useRole';
 
-const UserProfile = () => {
+const MemberProfile = () => {
     const { user, loading } = useAuth();
     // console.log(user)
 
     const [role] = useRole()
-const { name ,image ,email ,_id , role:userRole  } =role
+const { name ,image ,email ,_id , role:userRole  } =role 
 
     console.log(role)
     
@@ -38,4 +40,4 @@ const { name ,image ,email ,_id , role:userRole  } =role
     );
 };
 
-export default UserProfile;
+export default MemberProfile;

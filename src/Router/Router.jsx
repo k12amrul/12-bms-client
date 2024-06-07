@@ -10,6 +10,9 @@ import AdminProfile from "../Pages/Dashboard/AdminProfile/AdminProfile";
 import ManageMembers from "../Pages/Dashboard/ManageMembers/ManageMembers";
 import AgreementRequests from "../Pages/Dashboard/AgreementRequests/AgreementRequests";
 import PrivateRoute from "./PrivateRoute";
+import UserProfile from "../Pages/Dashboard/User/UserProfile";
+import Announcements from "../Pages/Dashboard/Announcements/Announcements";
+import MemberProfile from "../Pages/Dashboard/Member/MemberProfile";
 
 
 
@@ -70,10 +73,19 @@ const router = createBrowserRouter([
             //     element: <AdminHome></AdminHome>
             // },
 
-            // {
-            //     path: 'userHome',
-            //     element: <UserHome></UserHome>
-            // },
+            {
+                path: 'userProfile',
+                element: <UserProfile></UserProfile>
+            },
+            
+            {
+                path: 'announcements',
+                element: <Announcements></Announcements>
+            },
+            {
+                path: 'memberProfile',
+                element: <MemberProfile></MemberProfile>
+            },
         ]
         // dashboard 
     }

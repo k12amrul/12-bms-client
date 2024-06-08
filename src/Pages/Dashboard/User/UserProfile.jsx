@@ -27,10 +27,8 @@ const { name ,image ,email ,_id , role:userRole  } =role
     <h4 className="card-title  bg-purple-400 px-6 py-2 rounded-full ">{userRole} </h4>
     <h2 className="card-title">{name} </h2>
     <h2 className="card-title">{email} </h2>
-    <p></p>
-    <div className="card-actions">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
+    
+
   </div>
 </div>
 

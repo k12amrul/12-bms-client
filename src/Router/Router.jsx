@@ -13,6 +13,7 @@ import PrivateRoute from "./PrivateRoute";
 import UserProfile from "../Pages/Dashboard/User/UserProfile";
 import Announcements from "../Pages/Dashboard/Announcements/Announcements";
 import MemberProfile from "../Pages/Dashboard/Member/MemberProfile";
+import ManageCoupons from "../Pages/Dashboard/ManageCoupons/ManageCoupons";
 
 
 
@@ -62,11 +63,11 @@ const router = createBrowserRouter([
             },
             {
                 path: 'manageCoupons',
-                element: <h1 > dashboard 2</h1>
+                element: <ManageCoupons> </ManageCoupons>
             },
             {
                 path: 'announcement',
-                element: <h1 > dashboard 2</h1>
+                element: <Announcements></Announcements>
             },
             // {
             //     path: 'adminHome',
@@ -78,10 +79,7 @@ const router = createBrowserRouter([
                 element: <UserProfile></UserProfile>
             },
             
-            {
-                path: 'announcements',
-                element: <Announcements></Announcements>
-            },
+            
             {
                 path: 'memberProfile',
                 element: <MemberProfile></MemberProfile>

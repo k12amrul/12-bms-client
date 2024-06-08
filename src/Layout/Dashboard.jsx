@@ -21,82 +21,71 @@ const Dashboard = () => {
 
 
 
-            <div className="flex "   >
+            <div className="flex  "   >
                 {/* dashboard side bar */}
                 <div className="w-64 min-h-screen bg-gray-300">
                     <ul className="menu p-4">
 
-                    {/* my problem is solved by myself.
-Programming-Hero Instructors
-৭:৫৫ PM
-admin&&
-member&&
-!admin && !member
-&&
-Programming-Hero Instructors
-৭:৫৭ PM
-{}
-{} */}
+                        
 
+                        {
+                            role?.role === 'admin' &&
+                            <>
+                                <li>
+                                    <NavLink to="/dashboard/adminHome">
+                                        <FaHome></FaHome>
+                                        Admin Home</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/dashboard/manageUsers">
+                                        Manage Users
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/dashboard/agreementRequests">
+                                        Agreement Requests
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/dashboard/manageCoupons">
+                                        Manage Coupons
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/dashboard/announcement">
+                                        Announcement
+                                    </NavLink>
+                                </li>
 
-{
-    role?.role === 'admin' &&
-    <>
-    <li>
-        <NavLink to="/dashboard/adminHome">
-            <FaHome></FaHome>
-            Admin Home</NavLink>
-    </li>
-    <li>
-        <NavLink to="/dashboard/manageUsers">
-            Manage Users
-        </NavLink>
-    </li>
-    <li>
-        <NavLink to="/dashboard/agreementRequests">
-            Agreement Requests
-        </NavLink>
-    </li>
-    <li>
-        <NavLink to="/dashboard/manageCoupons">
-            Manage Coupons
-        </NavLink>
-    </li>
-    <li>
-        <NavLink to="/dashboard/announcement">
-            Announcement
-        </NavLink>
-    </li>
+                            </>
+                        }
 
-</>
-}
+                        {
+                            role?.role === 'member' && <li>
+                                <NavLink to="/dashboard/memberProfile">
 
-{
-    role?.role === 'member'  && <li>
-    <NavLink to="/dashboard/memberProfile">
-        
-    Member Profile</NavLink>
-</li>
+                                    Member Profile</NavLink>
+                            </li>
 
-}
-{
-    role?.role === 'user' && <>
+                        }
+                        {
+                            role?.role === 'user' && <>
 
-<li>
-                                        <NavLink to="/dashboard/userProfile">
-                                            
-                                            User Profile</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to="/dashboard/announcements">
-                                           
-                                            Announcements</NavLink>
-                                    </li>
+                                <li>
+                                    <NavLink to="/dashboard/userProfile">
 
-    </>
-}
+                                        User Profile</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/dashboard/announcements">
 
-{/* 
+                                        Announcements</NavLink>
+                                </li>
+
+                            </>
+                        }
+
+                        {/* 
                         {
                             role?.role === 'admin' ?
 

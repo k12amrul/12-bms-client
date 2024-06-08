@@ -6,7 +6,7 @@ const AgreementRequests = () => {
 
     const agreements = useLoaderData()
     const axiosPublic = useAxiosPublic()
-    const [a, sa] = useState()
+    // const [a, sa] = useState()
 
     
             const filterAgreements = agreements?.filter(agreement =>   agreement?.status !== "checked"     )

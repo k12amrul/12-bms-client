@@ -8,6 +8,8 @@ import axios from 'axios';
 // import { imageUpload } from '../../utills/imageUpload';
 import { AuthContext } from '../../cotexts/AuthProvider';
 import useAxiosPublic from '../../hooks/useAxiosPublic';
+import { imageUpload } from '../../utills/imageUpload';
+import Swal from 'sweetalert2';
 
 const SignUp = () => {
 
@@ -15,7 +17,7 @@ const SignUp = () => {
   const { register, handleSubmit, formState: { errors } } = useForm()
 
 
-  const { createUser, setloading } = useContext(AuthContext)
+  const { createUser, setloading, updateUserProfile } = useContext(AuthContext)
   const location = useLocation()
   const navigate = useNavigate()
   const [error, setError] = useState(null)
@@ -24,10 +26,10 @@ const SignUp = () => {
 
 
 
-  
 
 
-  const handleRegister = async  (data) => {
+
+  const handleRegister = async (data) => {
     // e.preventDefault()
     console.log(data.email, data.password)
     // console.log(errors)
@@ -35,35 +37,35 @@ const SignUp = () => {
     const email = data.email
     const password = data.password
 
-  // const image = data.image[0]
-  //   console.log(image)
-  //   const formData = new FormData()
-  //   formData.append( 'image' , image )
+    const image = data.image[0]
+    console.log(image)
+    const formData = new FormData()
+    formData.append('image', image)
 
-    // const image_ = data.image[0].name
-    
+    const image_ = data.image[0].name
 
- 
-
-try{
-
- 
-  //  const image_url= await   imageUpload(image )
-// const { data } = await  axios.post( `https://api.imgbb.com/1/upload?key=${import.meta.env.VITE_IMGBB_API_KEY}` ,
-
-// formData 
-
-// )
-// console.log(  image_url  )
-   
-}
-catch ( err ) {
-  console.log( err)
-}
+    const image_url = await imageUpload(image)
 
 
-   
- 
+    try {
+
+
+      //  const image_url= await   imageUpload(image )
+      // const { data } = await  axios.post( `https://api.imgbb.com/1/upload?key=${import.meta.env.VITE_IMGBB_API_KEY}` ,
+
+      // formData 
+
+      // )
+      // console.log(  image_url  )
+
+    }
+    catch (err) {
+      console.log(err)
+    }
+
+
+
+
 
 
     const user = { name, email }
@@ -74,6 +76,37 @@ catch ( err ) {
       .then(result => {
         const user = result.user
         toast.success('Register Successfully')
+        updateUserProfile(name, image_url)
+          .then(() => {
+            // create user entry in the database
+            const userInfo = {
+              name: data.name,
+              email: data.email,
+              image: result.user?.photoURL,
+              role: 'user',
+              // image: image_url
+            }
+            axiosPublic.post('/users', userInfo)
+              .then(res => {
+                if (res.data.insertedId) {
+                  console.log('user added to the database')
+
+                  Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'User created successfully.',
+                    showConfirmButton: false,
+                    // timer: 1500
+                  });
+                  navigate('/');
+                }
+              })
+
+
+          })
+          .catch(error => console.log(error))
+
+
         navigate(location.state ? location.state : '/')
         setSuccess('create User Success')
         setloading(false)
@@ -94,7 +127,7 @@ catch ( err ) {
         <div className="hero-content  flex-col lg:flex-row-reverse">
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmbqvtbD5x30z-T4SFenlgb0m-bgMKRKfJtw&s" alt="" /> */}
-         <img src="https://learnwithsumit.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogin.cc7f1c14.png&w=1080&q=75" alt="" />
+            <img src="https://learnwithsumit.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogin.cc7f1c14.png&w=1080&q=75" alt="" />
           </div>
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form onSubmit={handleSubmit(handleRegister)} className="card-body">
@@ -152,8 +185,8 @@ catch ( err ) {
                 <label className="label">
                   <span className="label-text">Image</span>
                 </label>
-               {/* <input id='image2' type="file" /> */}
-               
+                {/* <input id='image2' type="file" /> */}
+
                 <input {...register("image")} type="file" placeholder="image" className="input input-bordered" required />
               </div>
 

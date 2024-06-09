@@ -14,6 +14,7 @@ import UserProfile from "../Pages/Dashboard/User/UserProfile";
 import Announcements from "../Pages/Dashboard/Announcements/Announcements";
 import MemberProfile from "../Pages/Dashboard/Member/MemberProfile";
 import ManageCoupons from "../Pages/Dashboard/ManageCoupons/ManageCoupons";
+import Payment from "../Pages/Dashboard/Payment/Payment";
 
 
 
@@ -83,6 +84,10 @@ const router = createBrowserRouter([
             {
                 path: 'memberProfile',
                 element: <MemberProfile></MemberProfile>
+            },
+            {
+                path: 'payment',
+                element: <Payment> </Payment>
             },
         ]
         // dashboard 

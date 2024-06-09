@@ -3,6 +3,7 @@ import useAuth from '../../../hooks/useAuth';
 import useRole from '../../../hooks/useRole';
 import useAxiosPublic from '../../../hooks/useAxiosPublic';
 import { useQuery } from '@tanstack/react-query';
+import { NavLink } from 'react-router-dom';
 // import useAuth from '../../../hooks/useAuth';
 // import useRole from '../../../hooks/useRole';
 
@@ -28,8 +29,8 @@ const MemberProfile = () => {
 
   const agreementData = agreements?.filter(agreement => agreement?.email == userEmail && agreement?.status == 'checked')
 
-  const { apartment_image ,block_name ,floor_no ,rent ,apartment_no   }=agreementData || {}
-  console.log()
+  
+  // console.log(agreementData ,'111')
   return (
     <div>
 
@@ -50,38 +51,46 @@ const MemberProfile = () => {
         </div>
       </div>
       
+{
+  agreementData?.map( agreement  => 
+    <div className="card-body card w-96 ">
+                         
+                          <div className='card-actions justify-between'>
+                              <h5> Floor no : { agreement?.floor_no} </h5>
+                              <h5> Block name : {agreement?.block_name} </h5>
 
-      agreements {agreementData?.length}
+                          </div>
+                        
+                          <div className='card-actions justify-between'>
+                              <h5> Room no : { agreement?.apartment_no
+                              } </h5>
+                              <h5> Rent : { agreement?.rent} </h5>
 
-      <div className="card-body card w-96 ">
-                            <h2 className="card-title">
+                          </div>
+                          <div className="card-actions justify-between">
+                              <div className="">
+                              <NavLink to={'/dashboard/payment' } >
 
-                                {name}
-                            </h2>
-                            <h3>{email} </h3>
-                            <div className='card-actions justify-between'>
-                                <h5> Floor no : {floor_no} </h5>
-                                <h5> Block name : {block_name} </h5>
 
-                            </div>
-                            <div className='card-actions justify-between'>
-                                <h5> Room no : {apartment_no
-                                } </h5>
-                                <h5> Rent : {rent} </h5>
+                                   <button onClick={() => (agreement?._id)} className=' btn bg-blue-600 text-white' >pay </button>
+                            
+                              </NavLink>
+                            
+                                   
+                              </div>
+                              {/* <div className="">
 
-                            </div>
+                                  <button onClick={() => handleRejectAgreement(agreement?._id, agreement?.email)} className=' btn bg-red-200' > Reject </button>
 
-                            <div className="card-actions justify-between">
-                                <div className="">
-                                    <button onClick={() => (_id)} className=' btn bg-green-200' > Accept</button>
-                                </div>
-                                {/* <div className="">
+                              </div> */}
+                          </div>
+                      </div>
 
-                                    <button onClick={() => handleRejectAgreement(agreement?._id, agreement?.email)} className=' btn bg-red-200' > Reject </button>
 
-                                </div> */}
-                            </div>
-                        </div>
+
+   )
+}
+     
 
     </div>
   );

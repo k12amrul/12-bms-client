@@ -100,6 +100,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'loadAnnouncement',
+                loader: () => fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/announcement`),
                 element: <Loadannouncement></Loadannouncement>
             },
         ]

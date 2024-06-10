@@ -17,14 +17,17 @@ const AgreementRequests = () => {
 
     const handleAcceptAgreement = async (id, email) => {
         console.log(id, email)
-        const status = { status: 'checked' }
+        const status = { status: 'checked',
+        date : new Date()
+
+         }
         const role = { role: "member", email }
 
 
         try {
             const [patchResponse1, patchResponse2] = await Promise.all([
-                axiosPublic.patch(`/user/update`, role),
-                axiosPublic.patch(`/agreement/update/${id}`, status),
+                axiosPublic.put(`/user/update`, role),
+                axiosPublic.put(`/agreement/update/${id}`, status),
             ]);
 
             console.log(patchResponse1)
@@ -68,14 +71,14 @@ const AgreementRequests = () => {
         console.log(id)
         const status = { status: 'checked' }
         const role = { role: "user", email }
-        axiosPublic.patch(`/user/update`, role)
+        axiosPublic.put(`/user/update`, role)
             .then(res => {
                 console.log(res.data)
                 // navigate(location.state ? location.state : '/')
 
             })
             .catch((err) => console.log(err, 'cccc'))
-        axiosPublic.patch(`/agreement/update/${id}`, status)
+        axiosPublic.put(`/agreement/update/${id}`, status)
             .then(res => {
                 console.log(res.data)
                 // navigate(location.state ? location.state : '/')

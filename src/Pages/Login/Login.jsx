@@ -40,21 +40,8 @@ const Login = () => {
         const user = result.user
         const email = data.email
         console.log(email)
-        
-        const userJwt = { email }
-        // console.log(userJwt)
-        // data.target.reset()
-        // toast.success('Successfully logIn!');
-        // axios.post(`${process.env.REACT_APP_API_URL_LOCAL}/jwt`, userJwt ,
+        navigate(location.state ? location.state : '/')
        
-
-
-        // reset()
-        // navigate(location?.state ? location.state : '/')
-        // setloading(false)
-
-
-        // console.log(user)
       })
       .catch(err => {
         setError(err.message)

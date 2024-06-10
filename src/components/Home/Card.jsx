@@ -19,7 +19,7 @@ const Card = ({ apartment }) => {
 
 
 
-  // console.log( apartment )
+  console.log( apartment )
   const { _id, apartment_image, floor_no, block_name, apartment_no, rent, } = apartment
 
 
@@ -108,24 +108,23 @@ const Card = ({ apartment }) => {
   return (
 
     <div className="card card-side bg-base-100 shadow-xl">
-      <figure><img className=' py-6 pl-6' src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie" /></figure>
+      <figure><img className=' w-52  h-60 py-6 pl-6' src={apartment_image} alt="Movie" /></figure>
       <div className="card-body">
-        <h2 className="card-title">rent : duplex flat   </h2>
-        <h2 className="card-title">title : duplex flat   </h2>
+        <h2 className="card-title">rent :  ${rent }   </h2>
+        {/* <h2 className="card-title">status : {status}  </h2> */}
 
-        <p>Click the button to watch on Jetflix app.</p>
 
         <div>
-          <h3> floor no{floor_no}  </h3>
-          <h3> block name {block_name}  </h3>
-          <h3> apartment no {apartment_no}  </h3>
+          <h3> floor no : {floor_no}  </h3>
+          <h3> block name : {block_name}  </h3>
+          <h3> apartment no : {apartment_no}  </h3>
         </div>
         <div className="card-actions justify-end">
           {
 
           }
 
-          <button onClick={() => handleAgreement(_id)} className="btn btn-primary">Agreement</button>
+          <button onClick={() => handleAgreement(_id)} className="btn btn-secondary">Agreement</button>
 
           {/* <PrivateRoute>
    </PrivateRoute> */}

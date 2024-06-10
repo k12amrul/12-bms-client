@@ -1,14 +1,17 @@
 import React from 'react';
 import Aparments from './Aparments';
 import AparmentLocation from './AparmentLocation/AparmentLocation';
+import About from './About/About';
+import Banner from './Banner/Banner';
 
 const Home1 = () => {
    
     return (
         <div>
-           <h1> banner</h1>
+           <Banner> </Banner>
            <AparmentLocation> </AparmentLocation>
-            <Aparments> </Aparments>
+           <About> </About>
+           
 
         </div>
     );

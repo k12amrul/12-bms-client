@@ -29,25 +29,13 @@ const Navbar = () => {
 
 
         {/* <li><NavLink to={`/myArtCraft/${user?.email}`} > My-Art-Craft-List </NavLink> </li> */}
-        <li><NavLink to='/dashboard/cart'  > <button className="btn">
-            Inbox
-            <div className="badge badge-secondary">+99</div>
-        </button>
-        </NavLink> </li>
+        
 
-        <li><NavLink to='/about' > about  
-         </NavLink> </li>
+       
         <li><NavLink to='/register' > Register</NavLink> </li>
         <li><NavLink to='/login' >Login</NavLink> </li>
         {/* <li><NavLink to='/bookings' > Bookings</NavLink> </li> */}
-        {
-            user &&
-            <>
-                <li><NavLink to='/updateprofile' > Update Profile </NavLink> </li>
-                <li><NavLink to='/profile' >   Profile </NavLink> </li>
-            </>
-
-        }
+        
         {/* <li><NavLink to='/about' >About</NavLink> </li> */}
 
     </>

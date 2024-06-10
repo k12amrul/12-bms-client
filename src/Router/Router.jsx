@@ -15,6 +15,8 @@ import Announcements from "../Pages/Dashboard/Announcements/Announcements";
 import MemberProfile from "../Pages/Dashboard/Member/MemberProfile";
 import ManageCoupons from "../Pages/Dashboard/ManageCoupons/ManageCoupons";
 import Payment from "../Pages/Dashboard/Payment/Payment";
+import Aparments from "../components/Home/Aparments";
+import Loadannouncement from "../Pages/Dashboard/Member/Loadannouncement";
 
 
 
@@ -32,9 +34,12 @@ const router = createBrowserRouter([
             {
                 path: '/home',
                 element: <Home1></Home1>,
-
-
             },
+            {
+                path: '/aparment',
+                element: <Aparments> </Aparments>,
+            },
+            
 
 
         ]
@@ -88,6 +93,14 @@ const router = createBrowserRouter([
             {
                 path: 'payment',
                 element: <Payment> </Payment>
+            },
+            {
+                path: 'pHistory',
+                element: <h1>history  </h1>
+            },
+            {
+                path: 'loadAnnouncement',
+                element: <Loadannouncement></Loadannouncement>
             },
         ]
         // dashboard 

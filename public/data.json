@@ -1,146 +1,146 @@
 [
     {
-        "apartment_image": "https://example.com/image1.jpg",
+         "apartment_image": "https://media.istockphoto.com/id/1929345158/photo/modern-apartment-with-large-windows.jpg?s=1024x1024&w=is&k=20&c=BPU6q-8EwLIfG63zB0V-pYyxFbtPxNtfFFs8cLchyn8=",
         "floor_no": 1,
         "block_name": "A",
         "apartment_no": 101,
-        "rent": 1000,
-        "agreement_link": "https://example.com/agreement1"
+        "rent": 1000
+    
     },
     {
-        "apartment_image": "https://example.com/image2.jpg",
+         "apartment_image": "https://media.istockphoto.com/id/2119426639/photo/cosy-interior-of-living-room-with-window-sofa-and-wooden-floor-modern-apartment-and-home-decor.jpg?s=612x612&w=0&k=20&c=-Ce8yts2nOeBsZjjAOpt-tJS08rreEK1f1NQR0mOxqc=",
         "floor_no": 1,
         "block_name": "B",
         "apartment_no": 102,
-        "rent": 1100,
-        "agreement_link": "https://example.com/agreement2"
+        "rent": 1100
+    
     },
     {
-        "apartment_image": "https://example.com/image3.jpg",
+         "apartment_image": "https://media.istockphoto.com/id/2152050844/photo/vintage-style-living-room-interior.jpg?s=612x612&w=0&k=20&c=6tWCn_AeUJabYQZ0nbernTHfNt7Aw5mT2a7DqxWLhyk=",
         "floor_no": 2,
         "block_name": "A",
         "apartment_no": 201,
-        "rent": 1200,
-        "agreement_link": "https://example.com/agreement3"
+        "rent": 1200
+
     },
     {
-        "apartment_image": "https://example.com/image4.jpg",
+         "apartment_image": "https://media.istockphoto.com/id/1264348923/photo/interior-of-cozy-living-room-with-kids-stuff-and-ship-pictures-above-sofa-house-design-concept.jpg?s=612x612&w=0&k=20&c=2Oxd4lrSifpr5SUoXjH-2xVcCtNVhrqMqB_EsC-B0Mo=",
         "floor_no": 2,
         "block_name": "A",
         "apartment_no": 202,
-        "rent": 1300,
-        "agreement_link": "https://example.com/agreement4"
+        "rent": 1300
+    
     },
     {
-        "apartment_image": "https://example.com/image5.jpg",
+         "apartment_image": "https://media.istockphoto.com/id/1301157231/photo/fashionable-spacious-apartment-with-a-stylish-design-in-green-grey-and-white-pastel-colors.jpg?s=612x612&w=0&k=20&c=jrblAB7YrrnGDXSWxMmzAyo8GDSmK4KhWZ8q5QLjPPY=",
         "floor_no": 3,
         "block_name": "A",
         "apartment_no": 301,
-        "rent": 1400,
-        "agreement_link": "https://example.com/agreement5"
+        "rent": 1400
+    
     },
     {
-        "apartment_image": "https://example.com/image6.jpg",
+         "apartment_image": "https://media.istockphoto.com/id/181866883/photo/new-livingroom-home-interior.jpg?s=612x612&w=0&k=20&c=0UHECJYlU34pfg_Z6eTY3yVIC3bdFl4y9b2vF0bo7oU=",
         "floor_no": 3,
         "block_name": "A",
         "apartment_no": 302,
-        "rent": 1500,
-        "agreement_link": "https://example.com/agreement6"
+        "rent": 1500
+    
     },
     {
-        "apartment_image": "https://example.com/image7.jpg",
+         "apartment_image": "https://media.istockphoto.com/id/1260017737/photo/modern-home-interior.jpg?s=612x612&w=0&k=20&c=-FYuu7DKdceUrvNU7yyPYdVTbOr52LLxpYlcdG1Pkz8=",
         "floor_no": 4,
         "block_name": "B",
         "apartment_no": 401,
-        "rent": 1600,
-        "agreement_link": "https://example.com/agreement7"
+        "rent": 1600
+    
     },
     {
-        "apartment_image": "https://example.com/image8.jpg",
+         "apartment_image": "https://media.istockphoto.com/id/1600848609/photo/interior-design-architecture-computer-generated-image-of-living-room-architectural.jpg?s=612x612&w=0&k=20&c=BwSY5r3denFGcE_ZjEbc9mQpDKvqIQO3USB-olOOhsc=",
         "floor_no": 4,
         "block_name": "B",
         "apartment_no": 402,
-        "rent": 1700,
-        "agreement_link": "https://example.com/agreement8"
+        "rent": 1700
+
     },
     {
-        "apartment_image": "https://example.com/image9.jpg",
+         "apartment_image": "",
         "floor_no": 5,
         "block_name": "B",
         "apartment_no": 501,
-        "rent": 1800,
-        "agreement_link": "https://example.com/agreement9"
+        "rent": 1800
+    
     },
     {
-        "apartment_image": "https://example.com/image10.jpg",
+         "apartment_image": "https://media.istockphoto.com/id/1600848609/photo/interior-design-architecture-computer-generated-image-of-living-room-architectural.jpg?s=612x612&w=0&k=20&c=BwSY5r3denFGcE_ZjEbc9mQpDKvqIQO3USB-olOOhsc=",
         "floor_no": 5,
         "block_name": "B",
         "apartment_no": 502,
-        "rent": 1900,
-        "agreement_link": "https://example.com/agreement10"
+        "rent": 1900
+    
     },
     {
-        "apartment_image": "https://example.com/image11.jpg",
+         "apartment_image": "https://media.istockphoto.com/id/2119426639/photo/cosy-interior-of-living-room-with-window-sofa-and-wooden-floor-modern-apartment-and-home-decor.jpg?s=612x612&w=0&k=20&c=-Ce8yts2nOeBsZjjAOpt-tJS08rreEK1f1NQR0mOxqc=",
         "floor_no": 6,
         "block_name": "C",
         "apartment_no": 601,
-        "rent": 2000,
-        "agreement_link": "https://example.com/agreement11"
+        "rent": 2000
+    
     },
     {
-        "apartment_image": "https://example.com/image12.jpg",
+         "apartment_image": "https://media.istockphoto.com/id/1260017737/photo/modern-home-interior.jpg?s=612x612&w=0&k=20&c=-FYuu7DKdceUrvNU7yyPYdVTbOr52LLxpYlcdG1Pkz8=",
         "floor_no": 6,
         "block_name": "C",
         "apartment_no": 602,
-        "rent": 2100,
-        "agreement_link": "https://example.com/agreement12"
+        "rent": 2100
+
     },
     {
-        "apartment_image": "https://example.com/image13.jpg",
+         "apartment_image": "https://media.istockphoto.com/id/181866883/photo/new-livingroom-home-interior.jpg?s=612x612&w=0&k=20&c=0UHECJYlU34pfg_Z6eTY3yVIC3bdFl4y9b2vF0bo7oU=",
         "floor_no": 7,
         "block_name": "C",
         "apartment_no": 701,
-        "rent": 2200,
-        "agreement_link": "https://example.com/agreement13"
+        "rent": 2200
+    
     },
     {
-        "apartment_image": "https://example.com/image14.jpg",
+         "apartment_image": "https://media.istockphoto.com/id/1260017737/photo/modern-home-interior.jpg?s=612x612&w=0&k=20&c=-FYuu7DKdceUrvNU7yyPYdVTbOr52LLxpYlcdG1Pkz8=",
         "floor_no": 7,
         "block_name": "C",
         "apartment_no": 702,
-        "rent": 2300,
-        "agreement_link": "https://example.com/agreement14"
+        "rent": 2300
+    
     },
     {
-        "apartment_image": "https://example.com/image15.jpg",
+         "apartment_image": "https://media.istockphoto.com/id/1301157231/photo/fashionable-spacious-apartment-with-a-stylish-design-in-green-grey-and-white-pastel-colors.jpg?s=612x612&w=0&k=20&c=jrblAB7YrrnGDXSWxMmzAyo8GDSmK4KhWZ8q5QLjPPY=",
         "floor_no": 8,
         "block_name": "D",
         "apartment_no": 801,
-        "rent": 2400,
-        "agreement_link": "https://example.com/agreement15"
+        "rent": 2400
+    
     },
     {
-        "apartment_image": "https://example.com/image16.jpg",
+         "apartment_image": "https://media.istockphoto.com/id/181866883/photo/new-livingroom-home-interior.jpg?s=612x612&w=0&k=20&c=0UHECJYlU34pfg_Z6eTY3yVIC3bdFl4y9b2vF0bo7oU=",
         "floor_no": 8,
         "block_name": "D",
         "apartment_no": 802,
-        "rent": 2500,
-        "agreement_link": "https://example.com/agreement16"
+        "rent": 2500
+    
     },
     {
-        "apartment_image": "https://example.com/image17.jpg",
+         "apartment_image": "https://media.istockphoto.com/id/1301157231/photo/fashionable-spacious-apartment-with-a-stylish-design-in-green-grey-and-white-pastel-colors.jpg?s=612x612&w=0&k=20&c=jrblAB7YrrnGDXSWxMmzAyo8GDSmK4KhWZ8q5QLjPPY=",
         "floor_no": 9,
         "block_name": "D",
         "apartment_no": 901,
-        "rent": 2600,
-        "agreement_link": "https://example.com/agreement17"
+        "rent": 2600
+    
     },
     {
-        "apartment_image": "https://example.com/image18.jpg",
+         "apartment_image": "https://media.istockphoto.com/id/1264348923/photo/interior-of-cozy-living-room-with-kids-stuff-and-ship-pictures-above-sofa-house-design-concept.jpg?s=612x612&w=0&k=20&c=2Oxd4lrSifpr5SUoXjH-2xVcCtNVhrqMqB_EsC-B0Mo=",
         "floor_no": 9,
         "block_name": "D",
         "apartment_no": 902,
-        "rent": 2700,
-        "agreement_link": "https://example.com/agreement18"
+        "rent": 2700
+    
     }
 ]

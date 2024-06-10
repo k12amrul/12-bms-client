@@ -61,12 +61,30 @@ const Dashboard = () => {
                         }
 
                         {
-                            role?.role === 'member' && <li>
+                            role?.role === 'member' && 
+                            <>
+                            <li>
                                 <NavLink to="/dashboard/memberProfile">
 
                                     Member Profile</NavLink>
                             </li>
+                            <li>
+                                <NavLink to="/dashboard/payment">
 
+                                payment </NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/dashboard/pHistory">
+
+                                payment history </NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/dashboard/loadAnnouncement">
+
+                                announcement </NavLink>
+                            </li>
+
+                            </>
                         }
                         {
                             role?.role === 'user' && <>

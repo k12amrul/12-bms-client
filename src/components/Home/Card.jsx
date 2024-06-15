@@ -19,7 +19,7 @@ const Card = ({ apartment }) => {
 
 
 
-  console.log( apartment )
+  // console.log( apartment )
   const { _id, apartment_image, floor_no, block_name, apartment_no, rent, } = apartment
 
 

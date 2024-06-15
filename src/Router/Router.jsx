@@ -37,6 +37,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/aparment',
+                loader: () => fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/apartmentcount`),
                 element: <Aparments> </Aparments>,
             },
             
@@ -82,6 +83,7 @@ const router = createBrowserRouter([
 
             {
                 path: 'userProfile',
+                loader: ({ params }) => fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/agreements/${params?.email}`),
                 element: <UserProfile></UserProfile>
             },
             

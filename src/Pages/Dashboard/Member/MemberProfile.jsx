@@ -18,7 +18,7 @@ const MemberProfile = () => {
 
   // console.log(role)
 
-  const { data: agreements = [], refetch } = useQuery({
+  const { data: agreements = [], } = useQuery({
     queryKey: ['agreements'],
     queryFn: async () => {
       const res = await axiosPublic.get('/agreements')

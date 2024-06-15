@@ -11,6 +11,7 @@ const AparmentLocation = () => {
 <div className="hero-content text-center">
     <div className="max-w-md">
       <h1 className="text-5xl font-bold my-10"> Our  Location </h1>
+         <p className="text-2xl font-bold my-10">  Parashuram, Feni, Bangladesh. Our building is located in Parashuram Upazila of Feni district of Bangladesh </p>
           </div>
           
           </div>

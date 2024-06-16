@@ -35,7 +35,7 @@ const CheckoutForm = () => {
 
   const totalPrice = agreementData[0]?.rent
   const id = agreementData[0]?._id
-  console.log(totalPrice)
+  // console.log(totalPrice)
 
 
 
@@ -130,7 +130,7 @@ console.log( clientSecret )
           Swal.fire({
             position: "top-end",
             icon: "success",
-            title: "Thank you for the taka paisa",
+            title: "Thank you ",
             showConfirmButton: false,
             timer: 1500
           });

@@ -17,6 +17,7 @@ import ManageCoupons from "../Pages/Dashboard/ManageCoupons/ManageCoupons";
 import Payment from "../Pages/Dashboard/Payment/Payment";
 import Aparments from "../components/Home/Aparments";
 import Loadannouncement from "../Pages/Dashboard/Member/Loadannouncement";
+import PaymentHistory from "../Pages/Dashboard/Payment/PaymentHistory";
 
 
 
@@ -97,8 +98,10 @@ const router = createBrowserRouter([
                 element: <Payment> </Payment>
             },
             {
-                path: 'pHistory',
-                element: <h1>history  </h1>
+                path: 'paymentHistory/',
+                loader:  ( )=> fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/payments`) ,
+                // loader: ({ params }) => fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/payments/${params?.email}`),
+                element: <PaymentHistory></PaymentHistory>
             },
             {
                 path: 'loadAnnouncement',

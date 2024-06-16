@@ -51,7 +51,7 @@ const Aparments = () => {
     // })
 
     useEffect(() => {
-       fetch(`http://localhost:5000/apartments?page=${currentPage}&size=${itemPerPage}`)
+       fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/apartments?page=${currentPage}&size=${itemPerPage}`)
         .then( res => res.json( ))   
         .then( data  => {
                 setApartments( data )

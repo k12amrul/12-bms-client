@@ -4,6 +4,7 @@ import useAxiosPublic from '../../../hooks/useAxiosPublic';
 import { useQuery } from '@tanstack/react-query';
 import useAuth from '../../../hooks/useAuth';
 import Swal from 'sweetalert2';
+import toast from 'react-hot-toast';
 // import Swal from 'sweetalert2';
 
 const CheckoutForm = () => {
@@ -109,6 +110,15 @@ console.log( clientSecret )
 
       if (paymentIntent.status === 'succeeded') {
         console.log('transaction id', paymentIntent.id);
+
+        toast.success( 'Payment Successful' )
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: " Thank you . Payment Succeessful ",
+          showConfirmButton: false,
+          timer: 1500
+        });
         setTransactionId(paymentIntent.id);
 
         // now save the payment in the database

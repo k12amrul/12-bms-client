@@ -8,7 +8,7 @@ const About = () => {
 
 <div className="building-details">
       <h1 className="title">About the Building</h1>
-      <h2 className="subtitle">🌟 Welcome to Our Prestigious Building 🌟</h2>
+      <h2 className="subtitle">🌟 Welcome to Our  Building 🌟</h2>
       <hr className="divider" />
 
       <section className="section">

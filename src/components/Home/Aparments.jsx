@@ -51,14 +51,14 @@ const Aparments = () => {
     // })
 
     useEffect(() => {
-       fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/apartments?page=${currentPage}&size=${itemPerPage}`)
-        .then( res => res.json( ))   
-        .then( data  => {
-                setApartments( data )
+        fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/apartments?page=${currentPage}&size=${itemPerPage}`)
+            .then(res => res.json())
+            .then(data => {
+                setApartments(data)
 
             })
 
-    }, [currentPage,itemPerPage ])
+    }, [currentPage, itemPerPage])
 
 
 
@@ -97,10 +97,10 @@ const Aparments = () => {
                         onClick={() => setCurrentPage(page + 1)}
                         className='btn '
                         key={page}
-                    > {page } </button>)
+                    > {page} </button>)
                 }
                 <button onClick={handleNext} className=' btn'> next  </button>
-                <select value={itemPerPage} onChange={handlePagination} name="" id="">
+                <select  value={itemPerPage} onChange={handlePagination} name="" id="">
                     <option value="2">2</option>
                     <option value="5">5</option>
                     <option value="10">10</option>

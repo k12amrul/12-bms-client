@@ -75,15 +75,6 @@ const Announcements = () => {
 
     </div>
 
-//  <div className='max-w-[1150px] mx-auto '   >
-//            <h1>  Make announcement: </h1>       
-//             <form  onSubmit={makeAnnouncement}> 
-//             <input name='title'  type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
-//             <input name='des' type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
-//             <input type="submit" />
-//             </form>
-//         </div> 
-
 
 
     );

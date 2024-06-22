@@ -18,6 +18,7 @@ import Payment from "../Pages/Dashboard/Payment/Payment";
 import Aparments from "../components/Home/Aparments";
 import Loadannouncement from "../Pages/Dashboard/Member/Loadannouncement";
 import PaymentHistory from "../Pages/Dashboard/Payment/PaymentHistory";
+import UpdateCoupon from "../Pages/Dashboard/ManageCoupons/UpdateCoupon";
 
 
 
@@ -71,7 +72,13 @@ const router = createBrowserRouter([
             },
             {
                 path: 'manageCoupons',
+                loader: () => fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/coupons`),
                 element: <ManageCoupons> </ManageCoupons>
+            },
+            {
+                path: 'updateCoupons',
+                loader: () => fetch(`${import.meta.env.VITE_REACT_APP_API_URL}/coupons`),
+                element: <UpdateCoupon> </UpdateCoupon>
             },
             {
                 path: 'announcement',

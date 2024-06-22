@@ -67,7 +67,7 @@ const MemberProfile = () => {
                               <h5> Rent : { agreement?.rent} </h5>
 
                           </div>
-                          <h3> agreement accept date : { agreement?.date} </h3>
+                          <h3> agreement accept date : { agreement?.agreementAcceptDate} </h3>
                           <div className="card-actions justify-between">
                               <div className="">
                               <NavLink to={'/dashboard/payment' } >

@@ -26,7 +26,7 @@ This project was developed using the following technologies:
 
 - **Frontend:**
   - HTML5
-  - CSS3
+  - Tailwind css
   - JavaScript
   - React.js
 ###  usages pacages
@@ -37,11 +37,31 @@ This project was developed using the following technologies:
 - **Backend:**
   - Node.js
   - Express.js
+  - jwt
 
 - **Database:**
   - MongoDB
 
+## Installation
 
+Instructions on how to install and set up your project locally.
+
+```bash
+# Clone the repository
+
+# Install dependencies
+npm install
+# Start the development server
+npm start
+
+# Create a .env.local file and configure the Firebase keys:
+-  VITE_apiKey=hidden
+-  VITE_authDomain=hidden
+-  VITE_projectId=hidden
+-  VITE_storageBucket=hidden
+-  VITE_messagingSenderId=hidden
+-  VITE_appId=hidden
+-  VITE_SERVER_URL=https://sm-bead.vercel.app
 
 
 

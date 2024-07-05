@@ -46,7 +46,7 @@ This project was developed using the following technologies:
 
 Instructions on how to install and set up your project locally.
 
-```bash
+
 # Clone the repository
 
 # Install dependencies

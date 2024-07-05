@@ -1,7 +1,6 @@
 
 
 
-
  [website](https://effortless-frangipane-69f683.netlify.app/)
 
  [github  client ]( https://github.com/programming-hero-web-course1/b9a12-client-side-k12amrul)
@@ -19,10 +18,30 @@
 
 
 
-# usages pacages
+
+
+## Technologies
+
+This project was developed using the following technologies:
+
+- **Frontend:**
+  - HTML5
+  - CSS3
+  - JavaScript
+  - React.js
+###  usages pacages
 -  React Hook form
 -  Swiper slider
--  AOSPackage 
+-  AOSPackage
+
+- **Backend:**
+  - Node.js
+  - Express.js
+
+- **Database:**
+  - MongoDB
+
+
 
 
 

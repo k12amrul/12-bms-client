@@ -1,5 +1,5 @@
 
-
+# Real-Home 
 
  [website](https://effortless-frangipane-69f683.netlify.app/)
 
@@ -7,7 +7,9 @@
  
  [github  server ](  https://github.com/programming-hero-web-course1/b9a12-server-side-k12amrul) 
 
-# Features
+
+
+## Features
 
 - Distinctive Design: BMS features a unique design, avoiding similarities with previous examples. Free design resources were used for inspiration.
 
@@ -47,14 +49,14 @@ This project was developed using the following technologies:
 Instructions on how to install and set up your project locally.
 
 
-# Clone the repository
+### Clone the repository
 
-# Install dependencies
+### Install dependencies
 npm install
-# Start the development server
+### Start the development server
 npm start
 
-# Create a .env.local file and configure the Firebase keys:
+### Create a .env.local file and configure the Firebase keys:
 -  VITE_apiKey=hidden
 -  VITE_authDomain=hidden
 -  VITE_projectId=hidden
